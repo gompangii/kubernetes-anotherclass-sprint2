@@ -2,8 +2,9 @@ pipeline {
     agent any
 
     environment {
+        GITHUB_ID = 'gompangii'
         // 본인의 username으로 하실 분은 수정해주세요.
-        GITHUB_URL = 'https://github.com/k8s-1pro/kubernetes-anotherclass-sprint2.git'
+        GITHUB_URL = "https://github.com/${GITHUB_ID}/kubernetes-anotherclass-sprint2.git"
 
         // 실습 넘버링
         CLASS_NUM = '2213'
